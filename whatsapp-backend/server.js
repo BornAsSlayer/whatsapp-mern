@@ -44,7 +44,8 @@ db.once('open',() => {
             pusher.trigger('messages','inserted',
                 {
                     name: messageDetails.name,
-                    Messages: messageDetails.message
+                    Messages: messageDetails.message,
+                    timestamp: messageDetails.timestamp,
                 }
             );
         }else {
