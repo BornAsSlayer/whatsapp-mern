@@ -46,6 +46,7 @@ db.once('open',() => {
                     name: messageDetails.name,
                     Messages: messageDetails.message,
                     timestamp: messageDetails.timestamp,
+                    received: messageDetails.received,
                 }
             );
         }else {
